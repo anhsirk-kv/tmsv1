@@ -1,0 +1,70 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    padding: 40px;
+    color: #333;
+    margin: 0;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Heading Styling */
+h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Description Styling */
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Link Container Styling */
+.link-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Link Card Styling */
+.link-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Link Card Heading */
+.link-card h3 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* Link Card Paragraph */
+.link-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Hover Effects for Link Cards */
+.link-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,53 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    padding: 40px;
+    color: #333; /* Dark text for the body */
+}
+
+/* Heading Styling */
+h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #333; /* Dark text for headings */
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* List Item Styling */
+ul li {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    color: #333; /* Dark text for list items */
+}
+
+/* Last List Item Styling */
+ul li:last-child {
+    border-bottom: none;
+}
+
+/* Message Styling for No Records */
+ul li.no-records {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+}
+
+/* Hover Effect for List Items */
+ul li:hover {
+    background-color: #f2f2f2;
+}
