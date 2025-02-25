@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Registration Details</title>
+    <link rel="stylesheet" href="../styles/add-registration.css">
+</head>
+<body>
+    <h2>Update Registration Details</h2>
+    <div class="registration-container">
+        <form id="updateRegistrationForm" onsubmit="return updateRegistrationDetails();">
+            <!-- APP_NO -->
+            <label for="appNo">Application Number (APP_NO)</label><br>
+            <input type="text" id="appNo" name="appNo" placeholder="Enter Application Number" required><br><br>
+
+            <!-- VEH_NO -->
+            <label for="vehNo">Vehicle Number (VEH_NO)</label><br>
+            <input type="text" id="vehNo" name="vehNo" placeholder="Enter Vehicle Number" required><br><br>
+
+            <!-- VEH_ID -->
+            <label for="vehId">Vehicle ID (VEH_ID)</label><br>
+            <input type="text" id="vehId" name="vehId" placeholder="Enter Vehicle ID" required><br><br>
+
+            <!-- OWNER_ID -->
+            <label for="ownerId">Owner ID (OWNER_ID)</label><br>
+            <input type="text" id="ownerId" name="ownerId" placeholder="Enter Owner ID" required><br><br>
+
+            <!-- DATE_OF_PURCHASE -->
+            <label for="dateOfPurchase">Date of Purchase</label><br>
+            <input type="date" id="dateOfPurchase" name="dateOfPurchase" required><br><br>
+
+            <!-- DISTRIBUTER_NAME -->
+            <label for="distributorName">Distributor Name</label><br>
+            <input type="text" id="distributorName" name="distributorName" placeholder="Enter Distributor Name" required><br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Update Registration Details</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+
+    <a href="view-registrations.html">View Records</a>
+    <script src="scripts/update-registration.js"></script>
+</body>
+</html>

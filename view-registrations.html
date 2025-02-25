@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Registration Records</title>
+    <link rel="stylesheet" href="styles/view-registration.css">
+</head>
+
+<body>
+    <h2>Registration Records</h2>
+    <ul id="registrationList"></ul>
+    <script src="scripts/read-registration.js"></script>
+    <script>
+        window.onload= function () {
+            const registrations = JSON.parse(localStorage.getItem("registrations")) || [];
+            const registrationList = document.getElementById("registrationList");
+
+            if (registrations.length > 0) {
+                registrations.forEach(registration => {
+                    const listItem = document.createElement("li");
+                    listItem.textContent = `App No: ${registration.appNo}, Vehicle No: ${registration.vehNo}, Owner ID: ${registration.ownerId}, Date of Purchase: ${registration.dateOfPurchase}, Distributor: ${registration.distributorName}`;
+                    registrationList.appendChild(listItem);
+                });
+            } else {
+                const message = document.createElement("li");
+                message.textContent = "No registration details available.";
+                registrationList.appendChild(message);
+            }
+        }
+
+    </script>
+</body>
+
+</html>
